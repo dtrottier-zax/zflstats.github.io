@@ -22,9 +22,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="http://www.zaxbys.com/Static/Images/favicons/favicon-16x16.png">
   <style class="text/css">
   #mainbox{
-    background:rgba(172,30,45,1);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border:5px solid white;
+    background:none;
+    text-shadow: 1px 1px 10px rgba(23, 4, 0, 0.8);/*
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border:1px solid white;
+    outline:5px solid rgba(172,30,45,1);*/
     color:white;
 }
 #portfolio p{
@@ -51,8 +53,9 @@
       #logo{
           z-index:3;
           position:absolute;
-          top:0;
-          left:590px;
+          top:100%;
+          left:50%;
+          transform:translate(-50%,-50%);
           
       }
   </style>
@@ -60,8 +63,8 @@
 </head>
 <body>
 <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
-  <img id="header-image" src="images/hero-background.jpg" alt="Wood" width="1500" height="600">
-   <!-- <img id="logo" class="w3-center" src="images/mobi-logo.png" alt="Logo" width="70px" height="70px">-->
+  <img id="header-image" src="images/wood2.jpg" alt="Wood" width="1500" height="600">
+    <img id="logo" class="w3-center" src="images/mobi-logo.png" alt="Logo" width="60px" height="60px">
   <div id="mainbox" class="w3-display-middle w3-padding-large w3-wide w3-center">
     <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">ZFL Store Systems</h1>
     <h3 class="w3-hide-large" style="white-space:nowrap">ZFL Store Systems</h5>
@@ -76,7 +79,7 @@
 
 <div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
 
-<p class="type"><i class="fa fa-eye"></i>  At a glance</p>
+<p class="type"><i class="fa fa-eye"></i> At a glance</p>
 <p>All open cases: <span class="numbers">23</span></p>
 <p>Opened today: <span class="numbers">92</span></p>
 <p>Closed today: <span class="numbers">97</span></p>
